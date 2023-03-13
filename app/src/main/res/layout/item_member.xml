@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/membercard"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_margin="@dimen/dimen_16"
+        app:cardElevation="@dimen/dimen_16"
+        app:cardCornerRadius="@dimen/dimen_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_profile"
+        app:layout_constraintTop_toTopOf="@id/membercard"
+        app:layout_constraintBottom_toBottomOf="@id/membercard"
+        app:layout_constraintStart_toStartOf="@id/membercard"
+        android:elevation="@dimen/dimen_16"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

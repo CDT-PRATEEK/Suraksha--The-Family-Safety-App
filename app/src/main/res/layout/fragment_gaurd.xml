@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/dbluecard"
+        app:cardElevation="@dimen/dimen_16"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:cardBackgroundColor="@color/navyblue"
+        android:layout_margin="@dimen/dimen_16"
+        app:cardCornerRadius="@dimen/dimen_16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cardhieght"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/lbluecard"
+        app:layout_constraintTop_toBottomOf="@id/dbluecard"
+        app:cardElevation="@dimen/dimen_16"
+        app:cardBackgroundColor="#3CB371"
+        android:layout_margin="@dimen/dimen_16"
+        app:cardCornerRadius="@dimen/dimen_16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cardhieght"/>
+
+    <TextView
+        android:id="@+id/sos"
+        android:text="@string/sos"
+        android:textSize="@dimen/cardtitle"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/dbluecard"
+        app:layout_constraintStart_toStartOf="@id/dbluecard"
+        android:elevation="@dimen/dimen_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:padding="@dimen/dimen_16"/>
+
+
+    <TextView
+        android:id="@+id/gaurd"
+        android:text="@string/gaurd"
+        android:textSize="@dimen/cardtitle"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/lbluecard"
+        app:layout_constraintStart_toStartOf="@id/lbluecard"
+        android:elevation="@dimen/dimen_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/dimen_16"/>
+
+
+    <TextView
+        android:id="@+id/sos_msg"
+        app:layout_constraintTop_toBottomOf="@id/sos"
+        android:textColor="@color/white"
+        android:elevation="@dimen/dimen_16"
+        app:layout_constraintStart_toStartOf="@id/dbluecard"
+        app:layout_constraintEnd_toStartOf="@id/sos_img"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16"
+        android:text="@string/sosmsg"/>
+
+
+    <TextView
+        android:id="@+id/gaurd_msg"
+        app:layout_constraintTop_toBottomOf="@id/gaurd"
+        android:textColor="@color/white"
+        android:elevation="@dimen/dimen_16"
+        app:layout_constraintStart_toStartOf="@id/lbluecard"
+        app:layout_constraintEnd_toStartOf="@id/gaurd_img"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16"
+        android:text="@string/gaurdmsg"/>
+
+
+    <ImageView
+        android:id="@+id/sos_img"
+        android:src="@drawable/ic_sos"
+        android:layout_width="@dimen/dimen_100"
+        android:layout_height="@dimen/dimen_100"
+        app:layout_constraintTop_toTopOf="@id/dbluecard"
+        app:layout_constraintEnd_toEndOf="@id/dbluecard"
+        android:elevation="@dimen/dimen_16"
+        app:layout_constraintBottom_toBottomOf="@id/dbluecard"
+        android:layout_margin="@dimen/elevation"/>
+
+
+    <ImageView
+        android:id="@+id/gaurd_img"
+        android:src="@drawable/ic_shield"
+        android:layout_width="@dimen/dimen_100"
+        android:layout_height="@dimen/dimen_100"
+        app:layout_constraintTop_toTopOf="@id/lbluecard"
+        app:layout_constraintEnd_toEndOf="@id/lbluecard"
+        android:elevation="@dimen/dimen_16"
+        app:layout_constraintBottom_toBottomOf="@id/lbluecard"
+        android:layout_margin="@dimen/dimen_16"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/securitytitle"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="@dimen/dimen_20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/dimen_16"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
